@@ -19,13 +19,14 @@
 
   <body>
     <!-- See following sections for more information on parameters -->
-    <div
+    <a
       class="snapchat-creative-kit-share"
       data-theme="dark"
       data-size="large"
       data-text="false"
       data-share-url="https://pooyak.com/private/snap05/"
-    ></div>
+      href="snapchat://creativeKitWeb/camera/1?attachmentUrl=https%3A%2F%2Fpooyak.com%2Fprivate%2Fsnap05%2F"
+    >Hello!</a>
 
     <script>
       // Load the SDK asynchronously
@@ -37,9 +38,9 @@
         js.id = id;
         js.src = "https://sdk.snapkit.com/js/v1/create.js";
         sjs.parentNode.insertBefore(js, sjs);
-      })(document, "script", "snapkit-creative-kit-sdk");
+      })(document, "script", "snapchat-creative-kit-share");
     </script>
 
-    <a href="snapchat://creativeKitWeb/camera/1?attachmentUrl=https%3A%2F%2Fpooyak.com%2Fprivate%2Fsnap05%2F">Using HREF Directly</a>
+    Click this ^
   </body>
 </html>
